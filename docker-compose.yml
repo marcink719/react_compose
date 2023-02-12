@@ -1,0 +1,12 @@
+version: "1.0"
+services:
+  react:
+    build: .
+    ports:
+      - "3000:80"
+    volumes:
+      - ./myapp:/app:ro
+    environment:
+      DEBUG: "true"
+      FAST_REFRESH: "false"
+

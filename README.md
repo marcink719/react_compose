@@ -1,10 +1,11 @@
-# Deployment of React sample app on k8s 
-### This repo contains all neccesary files for creating minimal docker image of react app (~24MB size).    
+# Deployment of React sample app on k8s  
+
+### This repo contains all neccesary files for creating minimal docker image of react app (~24MB size).      
 
 
- 
+Building and pushing docker image by github actions is described in yaml file in folder `./github/workflows` 
   
-#### To run the container, using docker compose: &ensp;&ensp; `docker compose up` or `docker compose up -d` (run in background).   
+To run the container, using docker compose: &ensp;&ensp; `docker compose up` or `docker compose up -d` (run in background).   
 
 To setup k8s deployment: &ensp;&ensp; `kubectl apply -f deployment.yaml`.   
 
@@ -13,7 +14,8 @@ After cluster is successfully set up, you can check result, navigating in your b
   
   
 
-### Key note
+### Key note   
+
 #### When running k8s cluster not natively on linux (WSL, minikube on Windows etc.) there are network limitations.
 #### 
 ```
